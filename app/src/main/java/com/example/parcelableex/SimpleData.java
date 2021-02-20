@@ -7,9 +7,11 @@ import android.os.Parcelable;
 public class SimpleData implements Parcelable {
     int number;
     String message;
-    public SimpleData(int num, String msg){
+    String git_Test;
+    public SimpleData(int num, String msg, String git){
         number = num;
         message = msg;
+        git_Test = git;
     }
     public SimpleData(Parcel src){
         number = src.readInt();
